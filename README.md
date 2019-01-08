@@ -13,7 +13,7 @@ ________________________________________________________________________________
 Evaluation Test to Capco for interview process - Description
 
 This is a .NetCore API that consumes the https://swapi.co/ (The star wars API) and shows some informations obtained from it.
-There are 3 methods of type GET on the "on development" API.
+There are 4 methods of type GET on the "on development" API.
   - Index();
   - GetCharacterAsync();
   - GetCharactersListByName();
