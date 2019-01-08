@@ -39,7 +39,7 @@ namespace WebApplication5.Controllers
         //Get Personagem por ID
         // GET character/id
         [HttpGet("{id}")]
-        public async Task<ActionResult<Character>> GetAsync(int id)
+        public async Task<ActionResult<Character>> GetCharacterAsync(int id)
         {
             Character character = new Character();
             List<string> namesFilm = new List<string>();
