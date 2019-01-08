@@ -15,6 +15,7 @@ namespace WebApplication5.Controllers
         public string birth_year { get; set; }
         [JsonIgnore]
         public string url { get; set; }
+        [JsonIgnore]
         public string species { get; set; }
         public string numberOfFilms { get; set; }
       

@@ -42,7 +42,8 @@ namespace WebApplication5.Controllers
         public async Task<ActionResult<Character>> GetAsync(int id)
         {
             Character character = new Character();
-
+            List<string> namesFilm = new List<string>();
+            var filmId = string.Empty;
             var http = new HttpClient();
             var httpFilms = new HttpClient();
 
@@ -52,12 +53,9 @@ namespace WebApplication5.Controllers
             var serializer = new DataContractJsonSerializer(typeof(Character));
             //character.id= Regex.Replace(character.url, "[A-Za-z ]", "").Replace('/', ' ').Replace(':', ' ').Replace('.', ' ').Replace(" ", string.Empty);
             var ms = new MemoryStream(Encoding.UTF8.GetBytes(result));
-            var data = (Character)serializer.ReadObject(ms);
             var jo = JObject.Parse(result);
-            var valueSet = JsonConvert.DeserializeObject<Character>(jo.ToString()).films;
-            List<string> namesFilm = new List<string>();
-            var filmId=string.Empty;
-            foreach (var item in valueSet)
+            var valueSet = JsonConvert.DeserializeObject<Character>(Convert.ToString(jo)).films;
+            foreach (var item in valueSet.ToList())
             {
                 
                 var urlFilms = ("https://swapi.co/api/films/" + Regex.Replace(item, "[A-Za-z ]", "").Replace('/', ' ').Replace(':', ' ').Replace('.', ' ').Replace(" ", string.Empty)+"/");
@@ -65,7 +63,6 @@ namespace WebApplication5.Controllers
                 var resultFilm = await responseFilm.Content.ReadAsStringAsync();
                 var serializerFilms = new DataContractJsonSerializer(typeof(Character));
                 var msFilms = new MemoryStream(Encoding.UTF8.GetBytes(resultFilm));
-                var dataFilms = (Character)serializer.ReadObject(msFilms);
                 var joFilms = JObject.Parse(resultFilm);
                 var film= (string)joFilms.SelectToken("title");
                namesFilm.Add(film);
