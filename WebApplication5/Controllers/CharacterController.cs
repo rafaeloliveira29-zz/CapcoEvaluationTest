@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Cors;
 
-namespace WebApplication5.Controllers
+namespace CapcoEvaluationTest_Rafael.Controllers
 {
     [Route("api/[controller]")]
     [EnableCors("AllowAll")]
