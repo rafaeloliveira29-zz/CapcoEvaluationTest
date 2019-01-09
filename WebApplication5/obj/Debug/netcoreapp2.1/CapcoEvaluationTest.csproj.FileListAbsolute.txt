@@ -1,0 +1,14 @@
+C:\Users\rafael.souza\source\repos\WebApplication5\CapcoEvaluationTest\WebApplication5\bin\Debug\netcoreapp2.1\CapcoEvaluationTest.deps.json
+C:\Users\rafael.souza\source\repos\WebApplication5\CapcoEvaluationTest\WebApplication5\bin\Debug\netcoreapp2.1\CapcoEvaluationTest.runtimeconfig.json
+C:\Users\rafael.souza\source\repos\WebApplication5\CapcoEvaluationTest\WebApplication5\bin\Debug\netcoreapp2.1\CapcoEvaluationTest.runtimeconfig.dev.json
+C:\Users\rafael.souza\source\repos\WebApplication5\CapcoEvaluationTest\WebApplication5\bin\Debug\netcoreapp2.1\CapcoEvaluationTest.dll
+C:\Users\rafael.souza\source\repos\WebApplication5\CapcoEvaluationTest\WebApplication5\bin\Debug\netcoreapp2.1\CapcoEvaluationTest.pdb
+C:\Users\rafael.souza\source\repos\WebApplication5\CapcoEvaluationTest\WebApplication5\obj\Debug\netcoreapp2.1\CapcoEvaluationTest.csproj.CoreCompileInputs.cache
+C:\Users\rafael.souza\source\repos\WebApplication5\CapcoEvaluationTest\WebApplication5\obj\Debug\netcoreapp2.1\CapcoEvaluationTest.RazorAssemblyInfo.cache
+C:\Users\rafael.souza\source\repos\WebApplication5\CapcoEvaluationTest\WebApplication5\obj\Debug\netcoreapp2.1\CapcoEvaluationTest.RazorAssemblyInfo.cs
+C:\Users\rafael.souza\source\repos\WebApplication5\CapcoEvaluationTest\WebApplication5\obj\Debug\netcoreapp2.1\CapcoEvaluationTest.AssemblyInfoInputs.cache
+C:\Users\rafael.souza\source\repos\WebApplication5\CapcoEvaluationTest\WebApplication5\obj\Debug\netcoreapp2.1\CapcoEvaluationTest.AssemblyInfo.cs
+C:\Users\rafael.souza\source\repos\WebApplication5\CapcoEvaluationTest\WebApplication5\obj\Debug\netcoreapp2.1\CapcoEvaluationTest.RazorTargetAssemblyInfo.cache
+C:\Users\rafael.souza\source\repos\WebApplication5\CapcoEvaluationTest\WebApplication5\obj\Debug\netcoreapp2.1\CapcoEvaluationTest.dll
+C:\Users\rafael.souza\source\repos\WebApplication5\CapcoEvaluationTest\WebApplication5\obj\Debug\netcoreapp2.1\CapcoEvaluationTest.pdb
+C:\Users\rafael.souza\source\repos\WebApplication5\CapcoEvaluationTest\WebApplication5\obj\Debug\netcoreapp2.1\CapcoEvaluationTest.csprojAssemblyReference.cache
