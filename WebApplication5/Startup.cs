@@ -25,7 +25,35 @@ namespace WebApplication5
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll",
+                    builder =>
+                    {
+                        builder
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                        .AllowCredentials();
+                    });
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services
+       .AddMvcCore(options =>
+       {
+           options.RequireHttpsPermanent = true; // does not affect api requests
+            options.RespectBrowserAcceptHeader = true; // false by default
+                                                       //options.OutputFormatters.RemoveType<HttpNoContentOutputFormatter>();
+
+           
+       })
+       //.AddApiExplorer()
+       //.AddAuthorization()
+       .AddFormatterMappings()
+       //.AddCacheTagHelper()
+       //.AddDataAnnotations()
+       //.AddCors()
+       .AddJsonFormatters(); // JSON, or you can build your own custom one (above)
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
