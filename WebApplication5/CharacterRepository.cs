@@ -10,9 +10,9 @@ using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using CapcoEvaluationTest_Rafael.Controllers;
+using WebApplication5.Controllers;
 
-namespace CapcoEvaluationTest_Rafael
+namespace WebApplication5
 {
     public class CharacterRepository : ICharacterRepository
     {

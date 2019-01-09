@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CapcoEvaluationTest_Rafael
+namespace WebApplication5
 {
     interface ICharacterRepository 
     {

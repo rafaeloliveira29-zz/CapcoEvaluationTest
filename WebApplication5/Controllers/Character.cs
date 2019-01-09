@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace CapcoEvaluationTest_Rafael.Controllers
+namespace WebApplication5.Controllers
 {
     public class Character
     {
