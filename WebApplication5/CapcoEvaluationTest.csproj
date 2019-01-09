@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>CapcoEvaluationTest</AssemblyName>
+    <ApplicationIcon />
+    <OutputType>WinExe</OutputType>
+    <StartupObject />
+    <RootNamespace>CapcoEvaluationTest</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
