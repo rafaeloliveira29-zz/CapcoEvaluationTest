@@ -16,8 +16,8 @@ This is a .NetCore API that consumes the https://swapi.co/ (The star wars API) a
 There are 4 methods of type GET on the "on development" API.
   - Index();
   - GetCharacterAsync();
-  - GetCharactersListByName();
-  - GetHumanCharacter();
+  - GetCharactersList();
+  - GetHumanCharacters();
   
   The index page was designed to make easier the calling of the functions described above. The function GetCharactersAsync() returns
   the character id, the character name, the year of birth if availabe and the names of the movies this character has participated. The 
