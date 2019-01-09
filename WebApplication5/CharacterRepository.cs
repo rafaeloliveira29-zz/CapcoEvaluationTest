@@ -135,7 +135,7 @@ namespace WebApplication5
                     }
                 }
             }
-            namesAndHeight.Add("MEDIA DE PESOS ENTRE HUMANOS(lbs) ============> ", meanHeight.ToString());
+            namesAndHeight.Add("Human height mean(lbs) ============> ", meanHeight.ToString());
             //  namesAndFilmsList.OrderBy(x => x.Value);
             return namesAndHeight;
         }
