@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Net;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Runtime.Serialization.Json;
-using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Cors;
 
 namespace WebApplication5.Controllers
@@ -83,7 +73,7 @@ namespace WebApplication5.Controllers
         [Route("humans")]
         [EnableCors("AllowAll")]
         [HttpGet]
-        public async Task<ActionResult<SortedDictionary<string, string>>> GetHumanCharacter()
+        public async Task<ActionResult<SortedDictionary<string, string>>> GetHumanCharacters()
         {
             CharacterRepository result = new CharacterRepository();
             return await result.GetHumanCharacter();
