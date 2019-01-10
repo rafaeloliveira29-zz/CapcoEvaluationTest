@@ -28,5 +28,10 @@ There are 4 methods of type GET on the "on development" API.
   Running The API:
   Download the code using the ˜clone or download button˜ on the right top corner of the page , open the .sln file on visual studio, execute the solution. If it opens the index page just use it as you want.
   If it dont opens the link ˜/api/character/index˜, please type on the browser the address                           localhost:port/api/character/index.
+  
+  to access directly the resources:
+  => Get One character  => localhost:port/api/character/{characterId} => the id is in the range 1-86
+  => Get The list of characters and its respective number of films made => localhost:port/api/character/order
+  => Get only the human characters, ther height and the mean of the human heights => localhost:port/api/character/humans => Note that this one is the slowest link to load.
 ____________________________________________________________________________________________________________________________
   Tests:
