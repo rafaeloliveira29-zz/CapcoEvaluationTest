@@ -32,7 +32,7 @@ namespace WebApplication5.Controllers
                 StatusCode = (int)HttpStatusCode.OK,
                 Content = "<html><body bgcolor='#f2ebd9'><div align='center'><h1>API Rafael Souza Oliveira</h1>" +
                 "<h2>Evaluation Test for Capco Job interview</h2></div>"+
-                "<a>1) Bring a single Character(Choose a number between 1 and 86), type it in the next window!</a></br/>"
+                "<a>1) Bring a single Character(Choose a number between 1 and 86 and type it below) :</a></br/>"
                 + "<input id = 'charId'/>"
                 + "<input id='clickMe' type='button' value='clickme' onclick='doFunction();'/>" +
                 "<script>" +
