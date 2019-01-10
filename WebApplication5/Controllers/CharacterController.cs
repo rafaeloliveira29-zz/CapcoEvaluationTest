@@ -27,6 +27,8 @@ namespace WebApplication5.Controllers
                  * - Não está sendo validado se o usuario digitará letras ao invés de numeros, 
                  * - Nao está sendo validado se o usuário nao digitará nada,
                  * - So é considerado o caso onde o usuário digita um numero de 1 a 86
+                 * ---> Precisa Melhorar , o ideal seria criar uma pagina usando algum framewokrk frontend tanto para o index
+                 * quanto para os retornos das funções.  
                  */
                 ContentType = "text/html",
                 StatusCode = (int)HttpStatusCode.OK,
