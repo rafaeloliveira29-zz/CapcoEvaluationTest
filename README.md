@@ -25,4 +25,9 @@ There are 4 methods of type GET on the "on development" API.
   has participated. The function GetHumanCharacter() returns all human characters, their heights and calculate the mean between all the
   human character heights.
   ____________________________________________________________________________________________________________________________
+  Running The API:
+  Download the code using the ˜clone or download button˜ on the right top corner of the page , open the .sln file on visual studio, execute the solution. If it opens the index page just use it as you want.
+  If it dont opens the link ˜/api/character/index˜, please type on the browser the address localhost:XXXX/api/character/index
+  where XXXX is the port your visual Studio is using to run the application.
+____________________________________________________________________________________________________________________________
   Tests:
