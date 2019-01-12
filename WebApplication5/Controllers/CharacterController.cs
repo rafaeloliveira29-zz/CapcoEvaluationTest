@@ -10,7 +10,7 @@ namespace WebApplication5.Controllers
     [ApiController]
     public class CharacterController : ControllerBase, ICharacterRepository
     {
-        //Page Index
+        //Page Index(Job description)
         //GET character/index
         [HttpGet]
         [Route("index")]
