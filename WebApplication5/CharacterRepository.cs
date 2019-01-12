@@ -19,7 +19,7 @@ namespace WebApplication5
         public async Task<ActionResult<Character>> GetCharacterAsync(int id)
         {
             Character character = new Character();
-            List<string> namesFilm = new List<string>();
+            List<string> filmNames = new List<string>();
             var filmId = string.Empty;
             var http = new HttpClient();
             var httpFilms = new HttpClient();
@@ -39,7 +39,7 @@ namespace WebApplication5
                 var msFilms = new MemoryStream(Encoding.UTF8.GetBytes(resultFilm));
                 var joFilms = JObject.Parse(resultFilm);
                 var film = (string)joFilms.SelectToken("title");
-                namesFilm.Add(film);
+                filmNames.Add(film);
             }
             character.id = Regex.Replace((string)jo.SelectToken("url"), "[A-Za-z ]", "").Replace('/', ' ').Replace(':', ' ').Replace('.', ' ').Replace(" ", string.Empty);
             character.name = (string)jo.SelectToken("name");
@@ -48,7 +48,7 @@ namespace WebApplication5
             character.mass = "-";
             character.url = "-";
             character.height = "-";
-            character.films = namesFilm;
+            character.films = filmNames;
             return character;
         }
 
@@ -82,10 +82,10 @@ namespace WebApplication5
 
         public async Task<ActionResult<SortedDictionary<string, string>>> GetHumanCharacter()
         {
-            var meanHeight = 0;
+            var heightMean = 0;
             var http = new HttpClient();
             var httpSpecie = new HttpClient();
-            string newPeso = "0";
+            string newHeight = "0";
             SortedDictionary<string, string> namesAndHeight = new SortedDictionary<string, string>();
             SortedDictionary<string, string> finalResult = new SortedDictionary<string, string>();
             string specie = string.Empty;
@@ -123,20 +123,19 @@ namespace WebApplication5
                         if (cha.height == "unknown")
                         {
                             cha.name = cha.name + "Do Not Considered to mean(Height)";
-                            cha.height = newPeso;
+                            cha.height = newHeight;
                         }
                         else
 
                         {
-                            namesAndHeight.Add("Name: " + cha.name, "Peso: " + cha.height);
-                            int peso = Convert.ToInt32(cha.height);
-                            meanHeight += peso;
+                            namesAndHeight.Add("Name: " + cha.name, "Height: " + cha.height);
+                            int height = Convert.ToInt32(cha.height);
+                            heightMean += height;
                         }
                     }
                 }
             }
-            namesAndHeight.Add("Human height mean(lbs) ============> ", meanHeight.ToString());
-            //  namesAndFilmsList.OrderBy(x => x.Value);
+            namesAndHeight.Add("Human height mean(lbs) ============> ", heightMean.ToString());
             return namesAndHeight;
         }
     }

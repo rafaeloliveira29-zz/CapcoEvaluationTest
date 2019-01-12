@@ -11872,9 +11872,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rafael.souza\\source\\repos\\WebApplication5\\CapcoEvaluationTest\\WebApplication5\\WebApplication5.csproj",
+      "projectUniqueName": "C:\\Users\\rafael.souza\\source\\repos\\WebApplication5\\CapcoEvaluationTest\\WebApplication5\\CapcoEvaluationTest.csproj",
       "projectName": "CapcoEvaluationTest",
-      "projectPath": "C:\\Users\\rafael.souza\\source\\repos\\WebApplication5\\CapcoEvaluationTest\\WebApplication5\\WebApplication5.csproj",
+      "projectPath": "C:\\Users\\rafael.souza\\source\\repos\\WebApplication5\\CapcoEvaluationTest\\WebApplication5\\CapcoEvaluationTest.csproj",
       "packagesPath": "C:\\Users\\rafael.souza\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\rafael.souza\\source\\repos\\WebApplication5\\CapcoEvaluationTest\\WebApplication5\\obj\\",
       "projectStyle": "PackageReference",
