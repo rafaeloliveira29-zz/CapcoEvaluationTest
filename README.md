@@ -1,7 +1,7 @@
 # CapcoEvaluationTest
 Status: under Development.
 ____________________________________________________________________________________________________________________
-Requirements:
+Requirements: 
 - Use .NetCore - OK
 - C# - OK
 - WebApi - OK
